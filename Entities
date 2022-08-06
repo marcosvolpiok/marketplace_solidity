@@ -32,7 +32,7 @@ DONE -> Order
   -total_amount
 TO DO -> -METHODS:
   -Calculate total_amount
-  -getOrderByShop()
+DONE  ->  -getOrderByShop()
 
 OrderProduct
   -id_order
