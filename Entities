@@ -7,7 +7,7 @@ DONE -> Products
   -created_at
   -updated_at
 
-Cart
+DONE -> Cart
   -id_shop
   -id_customer
   -state
