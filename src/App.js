@@ -6,7 +6,7 @@ import Califications from './abis/Califications.json'
 var Web3 = require('web3');
 var contract;
 var currentAccount;
-const contractAddress = '0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B';
+const contractAddress = '0x9561C133DD8580860B6b7E504bC5Aa500f0f06a7';
 
 
 function App() {

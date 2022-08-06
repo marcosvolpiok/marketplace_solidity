@@ -1,0 +1,40 @@
+Products
+  -id_shop
+  -Title (string)
+  -Description (string)
+  -Images (json)
+  -Combinations (json: size, color, and price)
+  -created_at
+  -updated_at
+
+Cart
+  -id_shop
+  -id_customer
+  -state
+  -created_at
+  -updated_at
+
+CartProduct
+  -id_cart
+  -Product
+  -Combination (json: size, color, price, and quantity)
+  -created_at
+  -updated_at
+
+Customer
+  -Wallet Address
+
+Order
+  -id_shop
+  -id_customer
+  -id_cart
+  -total_amount
+
+OrderProduct
+  -id_order
+  -id_product
+  -Combination (json: size, color, price, and quantity)
+
+Shop
+  -id
+  -name
