@@ -14,21 +14,25 @@ DONE -> Cart
   -created_at
   -updated_at
 
-CartProduct
+DONE -> CartProduct
   -id_cart
   -Product
   -Combination (json: size, color, price, and quantity)
   -created_at
   -updated_at
 
+
 DONE -> Customer
   -Wallet Address
 
-Order
+DONE -> Order
   -id_shop
   -id_customer
   -id_cart
   -total_amount
+TO DO -> -METHODS:
+  -Calculate total_amount
+  -getOrderByShop()
 
 OrderProduct
   -id_order
