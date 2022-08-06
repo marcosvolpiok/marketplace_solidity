@@ -1,4 +1,4 @@
-Products
+DONE -> Products
   -id_shop
   -Title (string)
   -Description (string)
@@ -21,7 +21,7 @@ CartProduct
   -created_at
   -updated_at
 
-Customer
+DONE -> Customer
   -Wallet Address
 
 Order
@@ -35,6 +35,6 @@ OrderProduct
   -id_product
   -Combination (json: size, color, price, and quantity)
 
-Shop
+DONE -> (ON CALIFICATIONS) Shop
   -id
   -name
