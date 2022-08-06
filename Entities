@@ -34,7 +34,7 @@ TO DO -> -METHODS:
   -Calculate total_amount
 DONE  ->  -getOrderByShop()
 
-OrderProduct
+DONE -> OrderProduct
   -id_order
   -id_product
   -Combination (json: size, color, price, and quantity)
