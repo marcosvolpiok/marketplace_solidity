@@ -12,14 +12,17 @@ contract Carts is Ownable {
   }
 
   Cart[] public carts;
+  mapping(uint256 => uint256) id_customer_cart;
 
   function getCarts() public view returns(Cart[] memory){
     return carts;
   }
 
-
   function createCart(uint256 _id_shop, uint256 _id_customer) external onlyOwner {
-    carts.push(Cart(_id_shop, _id_customer, 0, block.timestamp, block.timestamp));
+    //carts.push(Cart(_id_shop, _id_customer, 0, block.timestamp, block.timestamp));
+    uint256 key = carts.length;
+    carts[key] = Cart(_id_shop, _id_customer, 0, block.timestamp, block.timestamp);
+    id_customer_cart[key] = _id_customer;
   }
   
 
