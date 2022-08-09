@@ -11,13 +11,20 @@ contract CartProducts is Ownable {
     uint256 updated_at;
   }
 
+  mapping(uint256 => bool) id_cart_exists;
+
   CartProduct[] public cartProducts;
 
   function createCartProduct(uint256 _id_shop, uint256 _id_product, string memory _combination) external onlyOwner {
     cartProducts.push(CartProduct(_id_shop, _id_product, _combination, block.timestamp, block.timestamp));
   }
-  
 
+  function addProductToCart(uint256 _id_cart, uint256 _id_product) public {
+    require(!id_cart_exists[_id_cart]);
+
+    cartProducts.push(CartProduct(_id_cart, _id_product, '[]', block.timestamp, block.timestamp));
+  }
+  
   function getCartProductProductsByCart(uint256 _id) public view returns(CartProduct[] memory) {
     CartProduct[] memory result = new CartProduct[](cartProducts.length);
     uint counter = 0;

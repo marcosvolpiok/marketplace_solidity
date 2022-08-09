@@ -42,3 +42,5 @@ DONE -> OrderProduct
 DONE -> (ON CALIFICATIONS) Shop
   -id
   -name
+
+-Add validations (valid that only the owner add to the cart)
